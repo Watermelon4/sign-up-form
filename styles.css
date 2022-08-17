@@ -21,6 +21,14 @@ body {
   vertical-align: middle;
 }
 
+#logo-container {
+  position: absolute;
+  width: 5px;
+  height: 20vh;
+  background-color: black;
+  top: 20vh;
+}
+
 .signup {
   width: 50vw;
   background-color: whitesmoke;
