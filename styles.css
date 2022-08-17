@@ -4,4 +4,5 @@ body {
 
 #background-image {
   max-height: 100vh;
+  vertical-align: middle;
 }
