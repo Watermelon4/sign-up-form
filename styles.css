@@ -15,6 +15,10 @@ body {
   justify-content: center;
 }
 
+.background {
+  position: relative;
+}
+
 #background-image {
   max-height: 100vh;
   max-width: 50vw;
@@ -27,6 +31,15 @@ body {
   height: 20vh;
   background-color: black;
   top: 20vh;
+}
+
+#image-credit {
+  position: absolute;
+  width: 5px;
+  height: 8vh;
+  max-height: 2em;
+  background-color: black;
+  bottom: 4vh;
 }
 
 .signup {
