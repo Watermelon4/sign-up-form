@@ -49,9 +49,26 @@ body {
 }
 
 .signup {
+  display: flex;
+  flex-direction: column;
   max-height: 100vh;
   min-height: 420px;
   width: 50vw;
   min-width: 280px;
   background-color: whitesmoke;
+}
+
+#message {
+  flex: auto;
+  background-color: rebeccapurple;
+}
+
+#information {
+  flex: 2 2 0;
+  background-color: blue;
+}
+
+#login {
+  flex: auto;
+  background-color: green;
 }
