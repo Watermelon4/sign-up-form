@@ -33,9 +33,10 @@ body {
 #logo-container {
   position: absolute;
   width: 5px;
-  height: 20vh;
+  height: 20%;
+  min-height: 64px;
   background-color: black;
-  top: 20vh;
+  top: 20%;
 }
 
 #image-credit {
@@ -44,7 +45,7 @@ body {
   height: 8vh;
   max-height: 2em;
   background-color: black;
-  bottom: 4vh;
+  bottom: 4%;
 }
 
 .signup {
