@@ -1,7 +1,9 @@
 body {
   display: flex;
   height: 100vh;
+  min-height: 420px;
   width: 100vw;
+  min-width: 560px;
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
@@ -11,7 +13,8 @@ body {
 
 .content {
   display: flex;
-  min-height: fit-content;
+  min-height: 420px;
+  min-width: 560px;
   justify-content: center;
 }
 
@@ -21,7 +24,9 @@ body {
 
 #background-image {
   max-height: 100vh;
+  min-height: 420px;
   max-width: 50vw;
+  min-width: 280px;
   vertical-align: middle;
 }
 
@@ -43,6 +48,9 @@ body {
 }
 
 .signup {
+  max-height: 100vh;
+  min-height: 420px;
   width: 50vw;
+  min-width: 280px;
   background-color: whitesmoke;
 }
