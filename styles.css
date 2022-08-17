@@ -53,14 +53,22 @@ body {
   flex-direction: column;
   max-height: 100vh;
   min-height: 420px;
-  width: 50vw;
+  max-width: 50vw;
   min-width: 280px;
   background-color: whitesmoke;
 }
 
 #message {
-  flex: auto;
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
   background-color: rebeccapurple;
+}
+
+#message > * {
+  max-width: 50vw;
+  min-width: 280px;
 }
 
 #information {
@@ -69,6 +77,6 @@ body {
 }
 
 #login {
-  flex: auto;
+  flex: 1 1 0;
   background-color: green;
 }
