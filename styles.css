@@ -59,10 +59,11 @@ body {
 }
 
 .message {
-  flex: 3 3 0;
+  flex: 1 1 0;
   display: flex;
   flex-direction: column;
   justify-content: end;
+  padding-bottom: 5vh;
   background-color: rebeccapurple;
 }
 
@@ -77,7 +78,7 @@ body {
 }
 
 #information {
-  flex: 2 2 0;
+  flex: 1 1 0;
   background-color: blue;
 }
 
@@ -93,6 +94,6 @@ body {
 }
 
 #login {
-  flex: 2 2 0;
+  flex: 1 1 0;
   background-color: green;
 }
