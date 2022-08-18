@@ -78,12 +78,14 @@ body {
 }
 
 #information {
+  display: flex;
   flex: 1 1 0;
   background-color: blue;
 }
 
 .grid-container {
   display: grid;
+  flex: 1 1 0;
   grid-template-columns: repeat(2, 50fr);
   grid-template-rows: repeat(3, 33fr);
 }
