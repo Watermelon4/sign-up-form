@@ -95,16 +95,16 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  padding-bottom: 2vw;
+  padding-bottom: 1vh;
   background-color: rebeccapurple;
 }
 
 .message > p {
   max-width: 50vw;
-  min-width: 280px;
+  min-width: 260px;
   font-size: 18px;
   margin-top: 0;
-  margin-bottom: 1em;
+  margin-bottom: 1vh;
   margin-left: 1em;
   margin-right: 5em;
 }
