@@ -154,3 +154,8 @@ div > input {
   position: absolute;
   width: 1px;
 }
+
+#submit-form-button {
+  height: 30px;
+  width: 120px;
+}
