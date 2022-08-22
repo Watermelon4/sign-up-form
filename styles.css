@@ -55,6 +55,10 @@ body {
   bottom: 1em;
 }
 
+#logo-container, #image-credit {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
 .signup {
   display: flex;
   flex-direction: column;
