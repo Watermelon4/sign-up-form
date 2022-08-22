@@ -74,7 +74,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  padding-bottom: 5vh;
+  padding-bottom: 2vw;
   background-color: rebeccapurple;
 }
 
