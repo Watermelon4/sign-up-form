@@ -120,12 +120,19 @@ body {
   flex: 1 1 0;
   grid-template-columns: repeat(2, 50fr);
   grid-template-rows: repeat(3, 33fr);
+  margin: 0 1em;
+  margin-right: 4em;
 }
 
 .grid-container > * {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   min-height: 60px;
+}
+
+div > input {
+  max-width: 15vw;
 }
 
 .login-options {
