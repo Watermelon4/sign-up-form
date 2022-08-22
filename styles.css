@@ -90,6 +90,11 @@ body {
   background-color: whitesmoke;
 }
 
+.signup > div {
+  padding: 0 2em;
+  padding-right: 5em;
+}
+
 .message {
   flex: 1 1 0;
   display: flex;
@@ -103,10 +108,7 @@ body {
   max-width: 50vw;
   min-width: 260px;
   font-size: 18px;
-  margin-top: 0;
   margin-bottom: 1vh;
-  margin-left: 1em;
-  margin-right: 5em;
 }
 
 #information {
@@ -120,8 +122,6 @@ body {
   flex: 1 1 0;
   grid-template-columns: repeat(2, 50fr);
   grid-template-rows: repeat(3, 33fr);
-  margin: 0 1em;
-  margin-right: 4em;
 }
 
 .grid-container > * {
