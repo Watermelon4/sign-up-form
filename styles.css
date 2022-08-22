@@ -46,6 +46,10 @@ body {
   top: 20%;
 }
 
+#logo-text {
+  font-size: 4em;
+}
+
 #image-credit {
   position: absolute;
   width: 100%;
