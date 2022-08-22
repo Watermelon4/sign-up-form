@@ -37,13 +37,24 @@ body {
 
 #logo-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   position: absolute;
   width: 100%;
   height: 20%;
   min-height: 64px;
   background-color: black;
   top: 20%;
+}
+
+#logo-picture, #logo-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo-picture {
+  max-height: 4em;
+  margin: auto 0;
 }
 
 #logo-text {
