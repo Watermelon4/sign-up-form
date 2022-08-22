@@ -53,6 +53,7 @@ body {
   max-height: 2em;
   background-color: black;
   bottom: 1em;
+  text-align: center;
 }
 
 #logo-container, #image-credit {
