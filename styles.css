@@ -108,7 +108,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  padding-bottom: 1vh;
+  margin-bottom: 1vh;
 }
 
 .message > p {
@@ -121,13 +121,15 @@ a {
 #information {
   display: flex;
   flex: 1 1 0;
+  box-shadow: 4px 0px 4px 0px grey;
+  padding-top: 16px;
+  padding-bottom: 12px;
 }
 
 .signup-form {
   display: flex;
   flex: 1 1 0;
   flex-direction: column;
-  margin-top: 2em;
 }
 
 .signup-fieldset {
