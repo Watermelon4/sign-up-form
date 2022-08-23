@@ -32,40 +32,44 @@
         </p>
       </div>
       <div id="information">
-        <div class="grid-container">
-          <div id="first-name">
-            <label for="firstname-input">First Name</label>
-            <input type="text" id="firstname-input" name="firstName">
-          </div>
-          <div id="last-name">
-            <label for="lastname-input">Last Name</label>
-            <input type="text" id="lastname-input" name="lastName">
-          </div>
-          <div id="email">
-            <label for="email-input">Email</label>
-            <input type="email" id="email-input" name="email">
-          </div>
-          <div id="phone-number">
-            <label for="phonenumber-input">Phone Number</label>
-            <input type="text" id="phonenumber-input" name="phoneNumber">
-          </div>
-          <div id="password">
-            <label for="password-input">Password</label>
-            <input type="password" id="password-input" name="password">
-          </div>
-          <div id="password-confirm">
-            <label for="confirm-password-input">Confirm Password</label>
-            <input type="password" id="confirm-password-input" 
-            name="confirmPassword">
-          </div>
-        </div>
+        <form class="signup-form">
+          <legend>Create Account</legend>
+          <fieldset class="signup-fieldset">
+            <div class="grid-container">
+              <div id="first-name">
+                <label for="firstname-input">First Name</label>
+                <input type="text" id="firstname-input" name="firstName">
+              </div>
+              <div id="last-name">
+                <label for="lastname-input">Last Name</label>
+                <input type="text" id="lastname-input" name="lastName">
+              </div>
+              <div id="email">
+                <label for="email-input">Email</label>
+                <input type="email" id="email-input" name="email">
+              </div>
+              <div id="phone-number">
+                <label for="phonenumber-input">Phone Number</label>
+                <input type="text" id="phonenumber-input" name="phoneNumber">
+              </div>
+              <div id="password">
+                <label for="password-input">Password</label>
+                <input type="password" id="password-input" name="password">
+              </div>
+              <div id="password-confirm">
+                <label for="confirm-password-input">Confirm Password</label>
+                <input type="password" id="confirm-password-input" 
+                name="confirmPassword">
+              </div>
+            </div>
+          </fieldset>
+        </form>
       </div>
       <div class="login-options">
         <div id="form-submit-container">
           <button type="button" id="submit-form-button" 
           name="submitFormButton"><label for="submit-form-button" 
-          id="submit-button">Create Account
-          </label>
+          id="submit-button">Continue</label>
           </button>
         </div>
         <div id="login-container">

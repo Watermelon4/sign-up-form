@@ -121,6 +121,19 @@ a {
   background-color: blue;
 }
 
+.signup-form {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  margin-top: 2em;
+}
+
+.signup-fieldset {
+  display: flex;
+  flex: 1 1 0;
+  border: 0;
+}
+
 .grid-container {
   display: grid;
   flex: 1 1 0;
