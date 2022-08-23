@@ -94,6 +94,10 @@ a {
   background-color: whitesmoke;
 }
 
+.signup * {
+  font-family: 'Noto Sans', sans-serif;
+}
+
 .signup > div {
   padding: 0 2em;
   padding-right: 2em;
@@ -133,7 +137,7 @@ a {
 }
 
 #form-legend {
-  font-weight: 800;
+  font-weight: 600;
   font-size: 24px;
 }
 
