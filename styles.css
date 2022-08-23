@@ -16,10 +16,6 @@ body {
   background-color: rgb(46, 46, 59);
 }
 
-a {
-  color: black;
-}
-
 .content {
   display: flex;
   min-height: 420px;
@@ -29,6 +25,10 @@ a {
 
 .background {
   position: relative;
+}
+
+.background a {
+  color: black;
 }
 
 #background-image {
@@ -96,6 +96,10 @@ a {
 
 .signup * {
   font-family: 'Noto Sans', sans-serif;
+}
+
+.signup a {
+  color: rgb(45, 110, 0);
 }
 
 .signup > div {
