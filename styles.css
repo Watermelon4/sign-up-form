@@ -141,21 +141,10 @@ div > input {
 }
 
 #form-submit-container {
-  margin-top: 2em;
-}
-
-.screen-reader {
-  border: 0; 
-  clip: rect(0 0 0 0); 
-  height: 1px; 
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
+  margin-top: 1.5em;
 }
 
 #submit-form-button {
-  height: 30px;
-  width: 120px;
+  height: 40px;
+  width: 240px;
 }
