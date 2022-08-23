@@ -105,7 +105,6 @@ a {
   flex-direction: column;
   justify-content: end;
   padding-bottom: 1vh;
-  background-color: rebeccapurple;
 }
 
 .message > p {
@@ -118,7 +117,6 @@ a {
 #information {
   display: flex;
   flex: 1 1 0;
-  background-color: blue;
 }
 
 .signup-form {
@@ -159,7 +157,6 @@ div > input {
 
 .login-options {
   flex: 1 1 0;
-  background-color: green;
 }
 
 #form-submit-container {
