@@ -159,10 +159,22 @@ body {
   flex-direction: column;
   justify-content: center;
   min-height: 60px;
+  font-weight: 300;
 }
 
 div > input {
   max-width: 15vw;
+  border: 1px solid gray;
+  border-radius: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 14px;
+}
+
+input:focus-visible {
+  border: 2px solid rgb(115, 192, 255);
+  box-shadow: rgb(115, 192, 255);
+  outline: none;
 }
 
 .login-options {
