@@ -177,10 +177,6 @@ input:focus-visible {
   outline: none;
 }
 
-.login-options {
-  flex: 1 1 0;
-}
-
 #form-submit-container {
   margin-top: 1.5em;
   margin-bottom: 1em;
