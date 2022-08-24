@@ -8,20 +8,21 @@ body {
   height: 100vh;
   min-height: 420px;
   width: 100vw;
-  min-width: 560px;
+  min-width: 720px;
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
   margin: 0px;
   background-color: rgb(46, 46, 59);
+  overflow: auto;
 }
 
 .content {
   display: flex;
   min-height: 420px;
-  min-width: 560px;
+  min-width: 720px;
   justify-content: center;
-  overflow-x: auto;
+  overflow-x: hidden;
 }
 
 .background {
@@ -37,7 +38,7 @@ body {
   max-height: 100vh;
   min-height: 420px;
   max-width: 50vw;
-  min-width: 400px;
+  min-width: 360px;
   vertical-align: middle;
 }
 
@@ -93,7 +94,7 @@ body {
   max-height: 100vh;
   min-height: 420px;
   max-width: 50vw;
-  min-width: 320px;
+  min-width: 360px;
   background-color: whitesmoke;
   overflow-y: auto;
   overflow-x: hidden;
