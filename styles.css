@@ -21,6 +21,7 @@ body {
   min-height: 420px;
   min-width: 560px;
   justify-content: center;
+  overflow-x: auto;
 }
 
 .background {
@@ -36,7 +37,7 @@ body {
   max-height: 100vh;
   min-height: 420px;
   max-width: 50vw;
-  min-width: 280px;
+  min-width: 400px;
   vertical-align: middle;
 }
 
@@ -91,8 +92,10 @@ body {
   max-height: 100vh;
   min-height: 420px;
   max-width: 50vw;
-  min-width: 280px;
+  min-width: 320px;
   background-color: whitesmoke;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .signup * {
@@ -170,6 +173,7 @@ body {
 
 div > input {
   max-width: 15vw;
+  min-width: 100px;
   border: 1px solid gray;
   border-radius: 8px;
   padding-left: 8px;
@@ -191,7 +195,7 @@ input:focus-visible {
 #submit-form-button {
   height: 40px;
   width: 240px;
-  max-width: 20vw;
+  max-width: 30vw;
   font-weight: 600;
   font-size: large;
   background-color: rgb(190, 255, 146);
