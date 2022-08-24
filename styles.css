@@ -200,6 +200,7 @@ input:focus-visible {
   font-weight: 600;
   font-size: large;
   background-color: rgb(190, 255, 146);
+  border: 2px solid black;
   border-radius: 10px;
 }
 
