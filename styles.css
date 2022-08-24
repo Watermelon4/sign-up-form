@@ -191,6 +191,7 @@ input:focus-visible {
 #submit-form-button {
   height: 40px;
   width: 240px;
+  max-width: 20vw;
   font-weight: 600;
   font-size: large;
   background-color: rgb(190, 255, 146);
