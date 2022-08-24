@@ -50,11 +50,13 @@
               </div>
               <div id="email">
                 <label for="email-input">Email</label>
-                <input type="email" id="email-input" name="email" required>
+                <input type="email" id="email-input" name="email" minlength="6" 
+                required>
               </div>
               <div id="phone-number">
                 <label for="phonenumber-input">Phone Number</label>
                 <input type="text" id="phonenumber-input" name="phoneNumber" 
+                placeholder="XXXXXXXXXX" minlength="10"  pattern="\d{10}" 
                 required>
               </div>
               <div id="password">
