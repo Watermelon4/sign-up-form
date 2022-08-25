@@ -41,36 +41,79 @@
             <div class="grid-container">
               <div id="first-name">
                 <label for="firstname-input">First Name</label>
-                <input type="text" id="firstname-input" name="firstName" 
-                pattern="[a-zA-Z]*" required>
+                <div class="input-and-icon">
+                  <input type="text" id="firstname-input" name="firstName" 
+                  pattern="[a-zA-Z]*" required>
+                  <div class="icon-container">
+                    <p id="check-mark">✓</p>
+                    <p id="cross-mark">✗</p>
+                  </div>
+                </div>
               </div>
+
               <div id="last-name">
                 <label for="lastname-input">Last Name</label>
-                <input type="text" id="lastname-input" name="lastName" 
-                pattern="[a-zA-Z]*" required>
+                <div class="input-and-icon">
+                  <input type="text" id="lastname-input" name="lastName" 
+                  pattern="[a-zA-Z]*" required>
+                  <div class="icon-container">
+                    <p id="check-mark">✓</p>
+                    <p id="cross-mark">✗</p>
+                  </div>
+                </div>
               </div>
+
               <div id="email">
                 <label for="email-input">Email</label>
-                <input type="email" id="email-input" name="email" minlength="6" 
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                <div class="input-and-icon">
+                  <input type="email" id="email-input" name="email" 
+                  minlength="6" 
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                  <div class="icon-container">
+                    <p id="check-mark">✓</p>
+                    <p id="cross-mark">✗</p>
+                  </div>
+                </div>
               </div>
+
               <div id="phone-number">
                 <label for="phonenumber-input">Phone Number</label>
-                <input type="text" id="phonenumber-input" name="phoneNumber" 
-                placeholder="XXXXXXXXXX" pattern="(\d{10})" 
-                required>
+                <div class="input-and-icon">
+                  <input type="text" id="phonenumber-input" name="phoneNumber" 
+                  placeholder="XXXXXXXXXX" pattern="(\d{10})" 
+                  required>
+                  <div class="icon-container">
+                    <p id="check-mark">✓</p>
+                    <p id="cross-mark">✗</p>
+                  </div>
+                </div>
               </div>
+
               <div id="password">
                 <label for="password-input">Password</label>
-                <input type="password" id="password-input" name="password" 
-                required>
+                <div class="input-and-icon">
+                  <input type="password" id="password-input" name="password" 
+                  required>
+                  <div class="icon-container">
+                    <p id="check-mark">✓</p>
+                    <p id="cross-mark">✗</p>
+                  </div>
+                </div>
               </div>
+
               <div id="password-confirm">
                 <label for="confirm-password-input">Confirm Password</label>
-                <input type="password" id="confirm-password-input" 
-                name="confirmPassword" required>
+                <div class="input-and-icon">
+                  <input type="password" id="confirm-password-input" 
+                  name="confirmPassword" required>
+                  <div class="icon-container">
+                    <p id="check-mark">✓</p>
+                    <p id="cross-mark">✗</p>
+                  </div>
+                </div>
               </div>
             </div>
+
             <div id="form-submit-container">
               <input type="submit" id="submit-form-button" 
               name="submitFormButton"><label for="submit-form-button" 

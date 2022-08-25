@@ -197,6 +197,27 @@ input:valid {
   border: 2px solid rgb(14, 190, 82);
 }
 
+.input-and-icon {
+  display: flex;
+}
+
+.icon-container {
+  position: relative;
+}
+
+.icon-container > p {
+  position: absolute;
+  visibility: hidden;
+}
+
+#check-mark {
+  color: green;
+}
+
+#cross-mark {
+  color: red;
+}
+
 #form-submit-container {
   margin-top: 1.5em;
   margin-bottom: 1em;
