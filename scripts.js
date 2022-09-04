@@ -23,3 +23,23 @@ const confirmPasswordDiv = signupInputs[5];
 const confirmPasswordInput = confirmPasswordDiv.querySelector("#confirm-password-input")
 const confirmPasswordCheckMark = confirmPasswordDiv.querySelector("#check-mark")
 const confirmPasswordCrossMark = confirmPasswordDiv.querySelector("#cross-mark")
+
+confirmPasswordInput.addEventListener("change", comparePassword)
+
+function comparePassword() {
+  if (passwordInput.value == confirmPasswordInput.value) {
+    confirmPasswordInput.validity.patternMismatch = false;
+    confirmPasswordCrossMark.style.visibility = "hidden"
+    confirmPasswordCheckMark.style.visibility = "visible"
+    passwordInput.validity.patternMismatch = false
+    passwordCrossMark.style.visibility = "hidden"
+    passwordCheckMark.style.visibility = "visible"
+  } else {
+    confirmPasswordInput.validity.patternMismatch = true
+    confirmPasswordCheckMark.style.visibility = "hidden"
+    confirmPasswordCrossMark.style.visibility = "visible"
+    passwordInput.validity.patternMismatch = true
+    passwordCheckMark.style.visibility = "hidden"
+    passwordCrossMark.style.visibility = "visible"
+  }
+}
