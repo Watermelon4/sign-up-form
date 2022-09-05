@@ -193,10 +193,6 @@ input:blank {
   border: 1px solid lightgray;
 }
 
-input:valid {
-  border: 2px solid rgb(14, 190, 82);
-}
-
 .input-and-icon {
   display: flex;
 }
