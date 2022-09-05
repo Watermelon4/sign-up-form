@@ -14,6 +14,26 @@
 
 const signupInputs = document.getElementsByClassName("input-and-icon");
 
+const firstNameDiv = signupInputs[0];
+const firstNameInput = firstNameDiv.querySelector("#firstname-input")
+const firstNameCheckMark = firstNameDiv.querySelector("#check-mark")
+const firstNameCrossMark = firstNameDiv.querySelector("#cross-mark")
+
+const lastNameDiv = signupInputs[1];
+const lastNameInput = lastNameDiv.querySelector("#lastname-input")
+const lastNameCheckMark = lastNameDiv.querySelector("#check-mark")
+const lastNameCrossMark = lastNameDiv.querySelector("#cross-mark")
+
+const emailDiv = signupInputs[2];
+const emailInput = emailDiv.querySelector("#email-input")
+const emailCheckMark = emailDiv.querySelector("#check-mark")
+const emailCrossMark = emailDiv.querySelector("#cross-mark")
+
+const phoneNumberDiv = signupInputs[3];
+const phoneNumberInput = phoneNumberDiv.querySelector("#phonenumber-input")
+const phoneNumberCheckMark = phoneNumberDiv.querySelector("#check-mark")
+const phoneNumberCrossMark = phoneNumberDiv.querySelector("#cross-mark")
+
 const passwordDiv = signupInputs[4];
 const passwordInput = passwordDiv.querySelector("#password-input")
 const passwordCheckMark = passwordDiv.querySelector("#check-mark")
