@@ -3,7 +3,7 @@ const passwordDiv = userInputs[4];
 const confirmPasswordDiv = userInputs[5];
 
 // not real, just for icons
-for (let i = 0; i < 3; i++) {
+for (let i = 0; i < 4; i++) {
   userInputs[i].addEventListener("change", checkValid);
 };
 
