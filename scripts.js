@@ -19,8 +19,8 @@ function checkValid() {
 };
 
 /**
- * Toggles the icon states of the <inputField> to have the check mark visible 
- * and the cross mark hidden.
+ * Toggles the icon states to have the check mark visible and the cross mark 
+ * hidden.
  */
 function enableCheckMark(inputField) {
   const icons = inputField.nextElementSibling;
@@ -29,8 +29,8 @@ function enableCheckMark(inputField) {
 }
 
 /**
- * Toggles the icon states of the <inputField> to have the cross mark visible 
- * and the check mark hidden.
+ * Toggles the icon states to have the cross mark visible and the check mark 
+ * hidden.
  */
 function enableCrossMark(inputField) {
   const icons = inputField.nextElementSibling;
