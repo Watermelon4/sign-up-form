@@ -6,34 +6,34 @@ const confirmPasswordDiv = userInputs[5];
 for (let i = 0; i < 3; i++) {
   userInputs[i].addEventListener("change", checkValid);
 };
-// comparison validation
-// confirmPasswordInput.addEventListener("change", comparePassword);
 
-// function comparePassword() {
-//   if (passwordInput.value == confirmPasswordInput.value) {
-//     confirmPasswordInput.validity.patternMismatch = false;
-//     confirmPasswordCrossMark.style.visibility = "hidden";
-//     confirmPasswordCheckMark.style.visibility = "visible";
-//     passwordInput.validity.patternMismatch = false;
-//     passwordCrossMark.style.visibility = "hidden";
-//     passwordCheckMark.style.visibility = "visible";
-//   } else {
-//     confirmPasswordInput.validity.patternMismatch = true;
-//     confirmPasswordCheckMark.style.visibility = "hidden";
-//     confirmPasswordCrossMark.style.visibility = "visible";
-//     passwordInput.validity.patternMismatch = true;
-//     passwordCheckMark.style.visibility = "hidden";
-//     passwordCrossMark.style.visibility = "visible";
-//   };
-// };
-
+/*
+Toggles validity icons based on the client-side validity.
+*/
 function checkValid() {
-  let icons = this.nextElementSibling;
   if (this.validity.valid == true) {
-    icons.children[1].style.visibility = "hidden"; // set cross hidden
-    icons.children[0].style.visibility = "visible"; // set check visible
+    enableCheckMark(this);
   } else {
-    icons.children[0].style.visibility = "hidden"; // set check hidden
-    icons.children[1].style.visibility = "visible"; // set cross visible
+    enableCrossMark(this);
   };
 };
+
+/*
+Toggles the icon states of the <inputField> to have the check mark visible and 
+the cross mark hidden.
+*/
+function enableCheckMark(inputField) {
+  const icons = inputField.nextElementSibling;
+  icons.children[1].style.visibility = "hidden"; // set cross hidden
+  icons.children[0].style.visibility = "visible"; // set check visible
+}
+
+/*
+Toggles the icon states of the <inputField> to have the cross mark visible and 
+the check mark hidden.
+*/
+function enableCrossMark(inputField) {
+  const icons = inputField.nextElementSibling;
+  icons.children[0].style.visibility = "hidden"; // set cross hidden
+  icons.children[1].style.visibility = "visible"; // set check visible
+}
