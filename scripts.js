@@ -7,9 +7,9 @@ for (let i = 0; i < 3; i++) {
   userInputs[i].addEventListener("change", checkValid);
 };
 
-/*
-Toggles validity icons based on the client-side validity.
-*/
+/**
+ * Toggles validity icons based on client-side validity.
+ */
 function checkValid() {
   if (this.validity.valid == true) {
     enableCheckMark(this);
@@ -18,20 +18,20 @@ function checkValid() {
   };
 };
 
-/*
-Toggles the icon states of the <inputField> to have the check mark visible and 
-the cross mark hidden.
-*/
+/**
+ * Toggles the icon states of the <inputField> to have the check mark visible 
+ * and the cross mark hidden.
+ */
 function enableCheckMark(inputField) {
   const icons = inputField.nextElementSibling;
   icons.children[1].style.visibility = "hidden"; // set cross hidden
   icons.children[0].style.visibility = "visible"; // set check visible
 }
 
-/*
-Toggles the icon states of the <inputField> to have the cross mark visible and 
-the check mark hidden.
-*/
+/**
+ * Toggles the icon states of the <inputField> to have the cross mark visible 
+ * and the check mark hidden.
+ */
 function enableCrossMark(inputField) {
   const icons = inputField.nextElementSibling;
   icons.children[0].style.visibility = "hidden"; // set cross hidden
