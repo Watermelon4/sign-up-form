@@ -1,11 +1,12 @@
 const userInputs = document.getElementsByClassName("user-input");
-const passwordDiv = userInputs[4];
-const confirmPasswordDiv = userInputs[5];
+const password = userInputs[4];
+const confirmPassword = userInputs[5];
 
-// not real, just for icons
-for (let i = 0; i < 4; i++) {
+for (let i = 0; i < 6; i++) {
   userInputs[i].addEventListener("change", checkValid);
 };
+password.addEventListener("change", comparePasswords)
+confirmPassword.addEventListener("change", comparePasswords)
 
 /**
  * Toggles validity icons based on client-side validity.
@@ -13,7 +14,8 @@ for (let i = 0; i < 4; i++) {
 function checkValid() {
   if (this.validity.valid == true) {
     enableCheckMark(this);
-  } else {
+  } 
+  else {
     enableCrossMark(this);
   };
 };
@@ -21,6 +23,7 @@ function checkValid() {
 /**
  * Toggles the icon states to have the check mark visible and the cross mark 
  * hidden.
+ * @param {object} inputField 
  */
 function enableCheckMark(inputField) {
   const icons = inputField.nextElementSibling;
@@ -31,9 +34,48 @@ function enableCheckMark(inputField) {
 /**
  * Toggles the icon states to have the cross mark visible and the check mark 
  * hidden.
+ * @param {object} inputField 
  */
 function enableCrossMark(inputField) {
   const icons = inputField.nextElementSibling;
   icons.children[0].style.visibility = "hidden"; // set cross hidden
   icons.children[1].style.visibility = "visible"; // set check visible
+}
+
+/**
+ * Sets visibility of both icons to hidden.
+ * @param {object} inputField 
+ */
+function hideIcons(inputField) {
+  const icons = inputField.nextElementSibling;
+  icons.children[0].style.visibility = "hidden"; // set cross hidden
+  icons.children[1].style.visibility = "hidden"; // set check hidden
+}
+
+/**
+ * Controls icon visibility based on the password and confirm password fields.
+ */
+function comparePasswords() {
+  checkValid()
+  // both are blank
+  if (confirmPassword.value == "" && password.value == "") {
+    hideIcons(password)
+    hideIcons(confirmPassword)
+  }
+  // both are matching
+  else if (password.value == confirmPassword.value) {
+    enableCheckMark(password)
+    enableCheckMark(confirmPassword)
+  }
+  // confirm password field is empty
+  else if (confirmPassword.value == "") {
+    enableCheckMark(password)
+  }
+  // password field is empty
+  else if (password.value == "") {
+    hideIcons(password)
+  }
+  else {
+    enableCrossMark(confirmPassword)
+  }
 }
