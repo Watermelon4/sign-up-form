@@ -3,10 +3,10 @@ const password = userInputs[4];
 const confirmPassword = userInputs[5];
 
 for (let i = 0; i < 6; i++) {
-  userInputs[i].addEventListener("change", checkValid);
+  userInputs[i].addEventListener("input", checkValid);
 };
-password.addEventListener("change", comparePasswords)
-confirmPassword.addEventListener("change", comparePasswords)
+// password.addEventListener("change", comparePasswords)
+// confirmPassword.addEventListener("change", comparePasswords)
 
 /**
  * Toggles validity icons based on client-side validity.
@@ -18,6 +18,10 @@ function checkValid() {
   else {
     enableCrossMark(this);
   };
+
+  if (this.value == "") {
+    hideIcons(this)
+  }
 };
 
 /**
@@ -53,29 +57,12 @@ function hideIcons(inputField) {
 }
 
 /**
- * Controls icon visibility based on the password and confirm password fields.
+ * both
+ * blank then hide
+ * 
+ * pass
+ * valid
+ * 
+ * confirm
+ * valid and matching
  */
-function comparePasswords() {
-  checkValid()
-  // both are blank
-  if (confirmPassword.value == "" && password.value == "") {
-    hideIcons(password)
-    hideIcons(confirmPassword)
-  }
-  // both are matching
-  else if (password.value == confirmPassword.value) {
-    enableCheckMark(password)
-    enableCheckMark(confirmPassword)
-  }
-  // confirm password field is empty
-  else if (confirmPassword.value == "") {
-    enableCheckMark(password)
-  }
-  // password field is empty
-  else if (password.value == "") {
-    hideIcons(password)
-  }
-  else {
-    enableCrossMark(confirmPassword)
-  }
-}
