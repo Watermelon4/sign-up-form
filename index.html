@@ -43,7 +43,7 @@
                 <label for="firstname-input">First Name</label>
                 <div class="input-and-icon">
                   <input type="text" class="user-input" id="firstname-input" 
-                  name="firstName" pattern="[a-zA-Z]*" required>
+                  name="firstName" pattern="[A-z]*" required>
                   <div class="icon-container">
                     <p id="check-mark">✓</p>
                     <p id="cross-mark">✗</p>
@@ -54,7 +54,7 @@
                 <label for="lastname-input">Last Name</label>
                 <div class="input-and-icon">
                   <input type="text" class="user-input" id="lastname-input" 
-                  name="lastName" pattern="[a-zA-Z]*" required>
+                  name="lastName" pattern="[A-z]*" required>
                   <div class="icon-container">
                     <p id="check-mark">✓</p>
                     <p id="cross-mark">✗</p>
@@ -90,7 +90,7 @@
                 <label for="password-input">Password</label>
                 <div class="input-and-icon">
                   <input type="password" class="user-input" id="password-input" 
-                  name="password" required>
+                  name="password" pattern="([A-z0-9@$!%*#?&])" required>
                   <div class="icon-container">
                     <p id="check-mark">✓</p>
                     <p id="cross-mark">✗</p>
@@ -101,7 +101,8 @@
                 <label for="confirm-password-input">Confirm Password</label>
                 <div class="input-and-icon">
                   <input type="password" class="user-input" 
-                  id="confirm-password-input" name="confirmPassword" required>
+                  id="confirm-password-input" name="confirmPassword" 
+                  pattern="([A-z0-9@$!%*#?&])" required>
                   <div class="icon-container">
                     <p id="check-mark">✓</p>
                     <p id="cross-mark">✗</p>
